@@ -48,6 +48,7 @@
 \usepackage{pgf}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\setbeamertemplate{navigation symbols}{} %no nav symbols
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -98,7 +99,7 @@
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
-\output_changes true
+\output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
@@ -106,8 +107,26 @@
 
 \begin_body
 
-\begin_layout Title
-Java :: Real Life
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+title[Java in Real Life
+\backslash
+hspace{2em}
+\backslash
+insertframenumber/
+\backslash
+inserttotalframenumber]{Java in Real Life}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -267,7 +286,7 @@ status open
 
 \end_inset
 
-Errors in hierarchy design makes it hard to refactor hierarchy.
+Hierarchy design bugs makes it hard to refactor.
 \end_layout
 
 \begin_layout Itemize
@@ -439,7 +458,8 @@ status open
 
 \end_inset
 
-No multiple inheritance allowed.
+Multiple inheritance - safe way.
+ Diamond problem.
 \end_layout
 
 \end_deeper
@@ -1241,7 +1261,7 @@ status open
 \end_inset
 
 JSP Model 1 and JSP Model 2.
- Scriplets.
+ Scriplets, JSTL and Expression Langiage.
 \end_layout
 
 \begin_layout Itemize
