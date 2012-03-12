@@ -124,6 +124,46 @@ insertframenumber/
 inserttotalframenumber]{Java in Real Life}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=Java,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+small,
+\end_layout
+
+\begin_layout Plain Layout
+
+	keywordstyle=
+\backslash
+color{blue}
+\backslash
+bfseries,
+\end_layout
+
+\begin_layout Plain Layout
+
+	stringstyle=
+\backslash
+ttfamily,
+\end_layout
+
+\begin_layout Plain Layout
+
+	showstringspaces=false} 
+\end_layout
+
 \end_inset
 
 
@@ -227,6 +267,137 @@ Unit tests.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+inheritwrong{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+class Engine {
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected int power;
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected int minRpm;
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected int maxRpm;
+\end_layout
+
+\begin_layout Plain Layout
+
+  //getters/setters/constructor
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Vehicle extends Engine {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private int capacity;
+\end_layout
+
+\begin_layout Plain Layout
+
+  private int volume;
+\end_layout
+
+\begin_layout Plain Layout
+
+  // getters/setters/constructor
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Wrong class hierarchy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+inheritwrong
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
 \begin_layout BeginFrame
 Thinking in Object-Oriented way
 \end_layout
@@ -323,17 +494,113 @@ Breaking incapsulation with protected field access.
 
 \end_layout
 
-\begin_layout BeginFrame
-Thinking in Object-Oriented way
-\end_layout
-
-\begin_layout Block
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-{Polymorphism}
+
+\backslash
+defverbatim[colored]
+\backslash
+inheritcorrect{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+class Engine {
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected int power;
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected int minRpm;
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected int maxRpm;
+\end_layout
+
+\begin_layout Plain Layout
+
+  //getters/setters/constructor
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Vehicle {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private Engine engine;
+\end_layout
+
+\begin_layout Plain Layout
+
+  private int capacity;
+\end_layout
+
+\begin_layout Plain Layout
+
+  private int volume;
+\end_layout
+
+\begin_layout Plain Layout
+
+  // getters/setters/constructor
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Better class hierarchy}
 \end_layout
 
 \end_inset
@@ -342,48 +609,20 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+inheritcorrect
 \end_layout
 
 \end_inset
 
-Ad-hoc polymorphism, method overloading.
-\end_layout
 
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
-Subtype polymorphism.
- Liskov substitution principle.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<3->
-\end_layout
-
-\end_inset
-
-Parametric polymorphism.
- Generics.
 \end_layout
 
 \end_deeper
@@ -391,6 +630,118 @@ Parametric polymorphism.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+adhocpoly{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+interface TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  Number calculate(int interest, int grossIncome);
+\end_layout
+
+\begin_layout Plain Layout
+
+  Number calculate(double interest, int grossincome);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class CalculatorImpl implements TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  // method implementations
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Bank {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private TaxCalculator calculator = new CalculatorImpl();
+\end_layout
+
+\begin_layout Plain Layout
+
+  public Number calculate(int grossIncome) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    int interest = getInterest(...);
+\end_layout
+
+\begin_layout Plain Layout
+
+    return calculator.calculate(interest, grossIncome);
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout BeginFrame
 Thinking in Object-Oriented way
 \end_layout
@@ -401,7 +752,7 @@ status open
 
 \begin_layout Plain Layout
 
-{Abstract classes and interfaces}
+{Ad-hoc polymorphism, method overloading.}
 \end_layout
 
 \end_inset
@@ -410,56 +761,931 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+adhocpoly
 \end_layout
 
 \end_inset
 
-Abstract class definition.
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+subtypepoly{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+interface TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  Number calculate(int interest, int grossIncome);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class TaxCalculatorWithVAT implements TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  Integer calculate(int interest, int grossIncome) {...}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class TaxCalculatorNoVAT implements TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  Float calculate(int interest, int grossIncome) {...}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Bank {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private final TaxCalculator calculator;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public Bank(TaxCalculator calculator) { this.calculator = calculator; };
+\end_layout
+
+\begin_layout Plain Layout
+
+  public Number calculate(int grossIncome) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    int interest = getInterest(...);
+\end_layout
+
+\begin_layout Plain Layout
+
+    return calculator.calculate(interest, grossIncome);
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Subtype polymorphism.
+ Liskov substitution principle}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+subtypepoly
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+parampoly{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+interface List<T> {
+\end_layout
+
+\begin_layout Plain Layout
+
+  void append(T item);
+\end_layout
+
+\begin_layout Plain Layout
+
+  void prepend(T item);
+\end_layout
+
+\begin_layout Plain Layout
+
+  T removeFirst();
+\end_layout
+
+\begin_layout Plain Layout
+
+  T removeLast();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class ArrayList<E> implements List<E> {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private E[] items = new E[100];
+\end_layout
+
+\begin_layout Plain Layout
+
+  private int currentIdx = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void append(E item) {...}
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void prepend(E item) {...}
+\end_layout
+
+\begin_layout Plain Layout
+
+  E removeFirst() {...}
+\end_layout
+
+\begin_layout Plain Layout
+
+  E removeLast() {...}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+void main() {
+\end_layout
+
+\begin_layout Plain Layout
+
+	List<String> stringList = new ArrayList<String>();
+\end_layout
+
+\begin_layout Plain Layout
+
+	stringList.append("new string here");
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Parametric polymorphism.
+ Generics.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+parampoly
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+abstractclass{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+class Engine {
+\end_layout
+
+\begin_layout Plain Layout
+
+  //  engine properties omitted
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void start() {};
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void go() {};
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void stop() {};
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abstract class Vehicle {
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected final Engine;
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected Vehicle(Engine engine) { this.engine = engine; }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public abstract void move();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Truck extends Vehicle {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private final int capacity;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public Vehicle(Engine engine, int capacity) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    super(engine);
+\end_layout
+
+\begin_layout Plain Layout
+
+    this.capacity = capacity;
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void move() { 
+\end_layout
+
+\begin_layout Plain Layout
+
+    engine.start();
+\end_layout
+
+\begin_layout Plain Layout
+
+    engine.go();
+\end_layout
+
+\begin_layout Plain Layout
+
+    engine.stop();
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Abstract class definition.
  Purpose.
- 
-\series bold
-Is-a
-\series default
- versus 
-\series bold
-Has-a
+ Is-a versus Has-a.}
 \end_layout
 
-\begin_layout Itemize
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<2->
+
+\backslash
+abstractclass
 \end_layout
 
 \end_inset
 
-Interface definition.
- Contracts.
+
 \end_layout
 
-\begin_layout Itemize
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<3->
+
+\backslash
+defverbatim[colored]
+\backslash
+interfaces{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+class Engine {  ...
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+interface Movable {
+\end_layout
+
+\begin_layout Plain Layout
+
+  void move();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abstract class Vehicle {
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected final Engine;
+\end_layout
+
+\begin_layout Plain Layout
+
+  protected Vehicle(Engine engine) { this.engine = engine; }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Truck extends Vehicle implements Moveable {
+\end_layout
+
+\begin_layout Plain Layout
+
+ public Vehicle(Engine engine) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    super(engine);
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void move() { 
+\end_layout
+
+\begin_layout Plain Layout
+
+    engine.start();
+\end_layout
+
+\begin_layout Plain Layout
+
+    engine.go();
+\end_layout
+
+\begin_layout Plain Layout
+
+    engine.stop();
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
 \end_layout
 
 \end_inset
 
-Multiple inheritance - safe way.
- Diamond problem.
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Interface definition.
+ Contracts.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+interfaces
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+multiinherit{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+class Engine {  ...
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+interface Movable {
+\end_layout
+
+\begin_layout Plain Layout
+
+  void move();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+interface Unloadable {
+\end_layout
+
+\begin_layout Plain Layout
+
+  void unload();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+abstract class Vehicle {  ...
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Truck extends Vehicle implements Moveable, Unloadable {
+\end_layout
+
+\begin_layout Plain Layout
+
+  private final Unloadable trunk;
+\end_layout
+
+\begin_layout Plain Layout
+
+  public Vehicle(Engine engine, Unloadable trunk) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    super(engine);
+\end_layout
+
+\begin_layout Plain Layout
+
+    this.trunk = trunk;
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void move() { ...
+ }
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void unload() { 
+\end_layout
+
+\begin_layout Plain Layout
+
+    trunk.unload(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Multiple inheritance - safe way.
+ Diamond problem.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+multiinherit
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
