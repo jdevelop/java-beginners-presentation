@@ -1783,9 +1783,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename BuilderPatternUMLDiagram.png
 	width 80text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
@@ -1821,9 +1847,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename factory-method-uml.gif
 	width 80text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
@@ -1859,9 +1911,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename singleton.gif
 	width 80text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
@@ -1897,9 +1975,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Command.gif
 	width 80text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
@@ -1935,9 +2039,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename iterator.gif
 	width 80text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
@@ -1973,9 +2103,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename strategy.gif
 	width 80text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
 
 \end_inset
 
@@ -2001,7 +2157,7 @@ status open
 
 \begin_layout Plain Layout
 
-{HTTP protocol overview}
+{Request / response model}
 \end_layout
 
 \end_inset
@@ -2010,92 +2166,598 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+begin{center}
 \end_layout
 
 \end_inset
 
-Request / response model
-\end_layout
 
-\begin_layout Itemize
+\begin_inset Graphics
+	filename Request_Response.gif
+	width 80text%
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<2->
+
+\backslash
+end{center}
 \end_layout
 
 \end_inset
 
-Stateless
-\end_layout
 
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<3->
-\end_layout
-
-\end_inset
-
-Request headers
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<4->
-\end_layout
-
-\end_inset
-
-Response headers
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<5->
-\end_layout
-
-\end_inset
-
-Cookies
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<6->
-\end_layout
-
-\end_inset
-
-Web sockets
 \end_layout
 
 \end_deeper
 \begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Java and WEB applications.
+\end_layout
+
+\begin_layout FrameSubtitle
+HTTP Protocol.
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Stateless}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename HTTPtransfer2.gif
+	width 70text%
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+httprequest{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+tiny,
+\end_layout
+
+\begin_layout Plain Layout
+
+	morekeywords={GET,Host,User-Agent,Accept,Accept-Language,Accept-Encoding,Connec
+tion,Referer,Cookie,Pragma,Cache-Control}
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+GET /links/widgets/zoneit.js HTTP/1.1 
+\end_layout
+
+\begin_layout Plain Layout
+
+Host: widgets.dzone.com 
+\end_layout
+
+\begin_layout Plain Layout
+
+User-Agent: Mozilla/5.0 (X11; FreeBSD amd64; rv:10.0.2) Gecko/20100101 Firefox/10.0.2
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Accept: */* 
+\end_layout
+
+\begin_layout Plain Layout
+
+Accept-Language: en-us,en;q=0.5 
+\end_layout
+
+\begin_layout Plain Layout
+
+Accept-Encoding: gzip, deflate 
+\end_layout
+
+\begin_layout Plain Layout
+
+Connection: keep-alive 
+\end_layout
+
+\begin_layout Plain Layout
+
+Referer: http://java.dzone.com/ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Cookie: __qca=1194188492-91087860-55883650
+\end_layout
+
+\begin_layout Plain Layout
+
+Pragma: no-cache 
+\end_layout
+
+\begin_layout Plain Layout
+
+Cache-Control: no-cache 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Java and WEB applications.
+\end_layout
+
+\begin_layout FrameSubtitle
+HTTP Protocol.
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Request headers}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+httprequest
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+httpresponse{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+tiny,
+\end_layout
+
+\begin_layout Plain Layout
+
+	morekeywords={Date,Server,X-Powered-By,Last-Modified,ETag,Expires,Cache-Control
+,Content-Encoding,Vary,Keep-Alive,Connection,Transfer-Encoding,Content-Type,
+ charset}
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+HTTP/1.1 200 OK 
+\end_layout
+
+\begin_layout Plain Layout
+
+Date: Tue, 13 Mar 2012 13:36:28 GMT 
+\end_layout
+
+\begin_layout Plain Layout
+
+Server: Apache/2.2.11 (Unix) DAV/2 SVN/1.5.5 Resin/4.0.4 PHP/5.2.13 
+\end_layout
+
+\begin_layout Plain Layout
+
+X-Powered-By: PHP/5.2.13 
+\end_layout
+
+\begin_layout Plain Layout
+
+Last-Modified: Tue, 13 Mar 2012 13:34:54 GMT 
+\end_layout
+
+\begin_layout Plain Layout
+
+ETag: "416b0bcb5a020fbeaeae5d0c6cb68d87" 
+\end_layout
+
+\begin_layout Plain Layout
+
+Expires: Sun, 19 Nov 1978 05:00:00 GMT 
+\end_layout
+
+\begin_layout Plain Layout
+
+Cache-Control: must-revalidate 
+\end_layout
+
+\begin_layout Plain Layout
+
+Content-Encoding: gzip 
+\end_layout
+
+\begin_layout Plain Layout
+
+Vary: User-Agent 
+\end_layout
+
+\begin_layout Plain Layout
+
+Keep-Alive: timeout=15, max=500 
+\end_layout
+
+\begin_layout Plain Layout
+
+Connection: Keep-Alive 
+\end_layout
+
+\begin_layout Plain Layout
+
+Transfer-Encoding: chunked 
+\end_layout
+
+\begin_layout Plain Layout
+
+Content-Type: text/html; 
+\end_layout
+
+\begin_layout Plain Layout
+
+charset=utf-8 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Java and WEB applications.
+\end_layout
+
+\begin_layout FrameSubtitle
+HTTP Protocol.
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Response headers}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+httpresponse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+htmloverview{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=HTML,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+tiny,
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+<html>
+\end_layout
+
+\begin_layout Plain Layout
+
+<head>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <title>Page Title</title>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen"
+ />
+\end_layout
+
+\begin_layout Plain Layout
+
+</head>
+\end_layout
+
+\begin_layout Plain Layout
+
+<body>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <div id="header">
+\end_layout
+
+\begin_layout Plain Layout
+
+    </div>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <div id="navigation">
+\end_layout
+
+\begin_layout Plain Layout
+
+        <a href="index.html">Home</a> | <a href="about.html">About</a> | 
+\end_layout
+
+\begin_layout Plain Layout
+
+		<a href="contact.html">Contact</a>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </div>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <div id="left-sidebar">
+\end_layout
+
+\begin_layout Plain Layout
+
+    </div>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <div id="content-area">
+\end_layout
+
+\begin_layout Plain Layout
+
+    </div>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <div id="right-sidebar">
+\end_layout
+
+\begin_layout Plain Layout
+
+    </div>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <div id="footer">
+\end_layout
+
+\begin_layout Plain Layout
+
+    </div>
+\end_layout
+
+\begin_layout Plain Layout
+
+</body>
+\end_layout
+
+\begin_layout Plain Layout
+
+</html>
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2122,74 +2784,40 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+begin{center}
 \end_layout
 
 \end_inset
 
-HTML markup
-\end_layout
 
-\begin_layout Itemize
+\begin_inset Graphics
+	filename html-overview.jpg
+	width 65text%
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<2->
+
+\backslash
+end{center}
 \end_layout
 
 \end_inset
 
-Hyperlinks
-\end_layout
 
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<3->
-\end_layout
-
-\end_inset
-
-Forms
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<4->
-\end_layout
-
-\end_inset
-
-CSS
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<5->
-\end_layout
-
-\end_inset
-
-JavaScript
 \end_layout
 
 \end_deeper
@@ -2202,7 +2830,136 @@ Java and WEB applications.
 \end_layout
 
 \begin_layout FrameSubtitle
+HTML.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{HTML example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+htmloverview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+ddl{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=SQL,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+CREATE TABLE customer (
+\end_layout
+
+\begin_layout Plain Layout
+
+  customer_id int primary key auto_increment,
+\end_layout
+
+\begin_layout Plain Layout
+
+  firstname varchar(255) not null,
+\end_layout
+
+\begin_layout Plain Layout
+
+  lastname varchar(255) not null,
+\end_layout
+
+\begin_layout Plain Layout
+
+  email varchar(100) not null,
+\end_layout
+
+\begin_layout Plain Layout
+
+  gender char(1) null
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Java and WEB applications.
+\end_layout
+
+\begin_layout FrameSubtitle
 Databases.
+ Data Definition Language (DDL)
 \end_layout
 
 \begin_layout Block
@@ -2211,7 +2968,167 @@ status open
 
 \begin_layout Plain Layout
 
-{Data Definition Language}
+{Tables}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ddl
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+ddlindex{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=SQL,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+create index customer_gender on customer(gender);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+ddluniqueindex{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=SQL,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+create unique index customer_firstname_lastname 
+\end_layout
+
+\begin_layout Plain Layout
+
+	on customer(firstname,lastname);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Java and WEB applications.
+\end_layout
+
+\begin_layout FrameSubtitle
+Databases.
+ Data Definition Language (DDL)
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Indexes.
+ Unique indexes.
+ Primary keys.}
 \end_layout
 
 \end_inset
@@ -2221,49 +3138,51 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<1->
-\end_layout
-
-\end_inset
-
-Tables.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
 Indexes.
- Unique indexes.
- Primary keys.
+ Hash and B-Tree indexes.
+ Purpose.
 \end_layout
 
-\begin_layout Itemize
+\begin_deeper
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<3->
+
+\backslash
+ddlindex
 \end_layout
 
 \end_inset
 
-Views.
+
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Unique indexes
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ddluniqueindex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout EndFrame
 
@@ -2283,7 +3202,7 @@ status open
 
 \begin_layout Plain Layout
 
-{Database connectivity}
+{JDBC Overview}
 \end_layout
 
 \end_inset
@@ -2292,74 +3211,253 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+begin{center}
 \end_layout
 
 \end_inset
 
-JDBC overview.
-\end_layout
 
-\begin_layout Itemize
+\begin_inset Graphics
+	filename JDBC.jpg
+	width 50text%
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<2->
+
+\backslash
+end{center}
 \end_layout
 
 \end_inset
 
-Database drivers.
+
 \end_layout
 
-\begin_layout Itemize
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<3->
+
+\backslash
+defverbatim[colored]
+\backslash
+jdbcexample{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=JAVA,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+tiny
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+interface CustomerEnumerator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  List<Customer> enumerate(String firstName) throws EnumerateCustomerException;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+class JDBCCustomerEnumerator implements CustomerEnumerator {
+\end_layout
+
+\begin_layout Plain Layout
+
+  public List<Customer> enumerate(String firstName) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    Class.forName("com.mysql.jdbc.Driver").newInstance();
+\end_layout
+
+\begin_layout Plain Layout
+
+    Connection dbh = null; PreparedStatement psth = null; ResultSet res
+ = null;
+\end_layout
+
+\begin_layout Plain Layout
+
+    try {
+\end_layout
+
+\begin_layout Plain Layout
+
+      DriverManager.
+\end_layout
+
+\begin_layout Plain Layout
+
+        getConnection("jdbc:mysql://localhost:3306/customers","dbUser","c00lpwd"
+);
+\end_layout
+
+\begin_layout Plain Layout
+
+      PreparedStatement psth = dbh.prepareStatement("select firstname,lastname,ge
+nder 
+\end_layout
+
+\begin_layout Plain Layout
+
+        from customers where firstname=?");
+\end_layout
+
+\begin_layout Plain Layout
+
+      psth.setString(1,firstName);
+\end_layout
+
+\begin_layout Plain Layout
+
+      ResultSet res = psth.executeQuery();
+\end_layout
+
+\begin_layout Plain Layout
+
+      List<Customer> customers = new ArrayList<Customer>(100);
+\end_layout
+
+\begin_layout Plain Layout
+
+      while (res.hasNext()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+        customers.add(new Customer(res.getString(1),res.getString(2),res.getString(3
+));
+\end_layout
+
+\begin_layout Plain Layout
+
+      }
+\end_layout
+
+\begin_layout Plain Layout
+
+      return customers;
+\end_layout
+
+\begin_layout Plain Layout
+
+    } catch (SQLException e) { throw new EnumerateCustomerException(e);}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+      finally { DbUtils.closeQuietly(dbh, psth, res);}
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
 \end_layout
 
 \end_inset
 
-Connections.
+
 \end_layout
 
-\begin_layout Itemize
+\begin_layout BeginFrame
+Java and WEB applications.
+\end_layout
+
+\begin_layout FrameSubtitle
+JDBC.
+\end_layout
+
+\begin_layout ExampleBlock
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<4->
+{Example connecting to database and fetching results}
 \end_layout
 
 \end_inset
 
-Statements and prepared statements.
+
 \end_layout
 
-\begin_layout Itemize
+\begin_deeper
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<5->
+
+\backslash
+jdbcexample
 \end_layout
 
 \end_inset
 
-Result sets.
+
 \end_layout
 
 \end_deeper
@@ -2673,6 +3771,99 @@ Shareware.
 \end_layout
 
 \end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Suggested readings
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Steve McConnell.
+
+\series default
+ Code Complete: A Practical Handbook of Software Construction.
+ 
+\series bold
+ISBN-10: 0735619670.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Joshua Bloch.
+ 
+\series default
+Effective Java.
+ 
+\series bold
+ISBN-10: 0321356683.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Bruce Eckel.
+ 
+\series default
+Thinking in Java.
+ 
+\series bold
+ISBN-10: 0131872486.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Kathy Sierra.
+
+\series default
+ Head First Java.
+ 
+\series bold
+ISBN-10: 0596009208.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Elisabeth Freeman.
+
+\series default
+ Head First Design Patterns.
+ 
+\series bold
+ISBN-10: 0596007124.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Martin Fowler.
+
+\series default
+ Refactoring: Improving the Design of Existing Code.
+ 
+\series bold
+ISBN-10: 0201485672.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Craig Larman.
+
+\series default
+ Applying UML and Patterns: An Introduction to Object-Oriented Analysis
+ and Design and Iterative Development.
+ 
+\series bold
+ISBN-10: 0131489062.
+\end_layout
+
 \begin_layout EndFrame
 
 \end_layout
