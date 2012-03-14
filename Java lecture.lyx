@@ -248,20 +248,6 @@ status open
 Easy maintenance.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<5->
-\end_layout
-
-\end_inset
-
-Unit tests.
-\end_layout
-
 \end_deeper
 \begin_layout EndFrame
 
@@ -1681,6 +1667,585 @@ status open
 
 \backslash
 multiinherit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+unittestinterface{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}
+\end_layout
+
+\begin_layout Plain Layout
+
+interface TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+	Number calculateTax(Number income);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout FrameSubtitle
+Unit testing.
+ JUnit 4.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Interface definition}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+unittestinterface
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+unittestclass{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+public class TaxCalculatorTest {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  private TaxCalculator calculator;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  @Test(expected = IllegalArgumentException.class)
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void testNullArgument() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    calculator.calculateTax(null);
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  @Test(expected = IllegalArgumentException.class)
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void testNegativeAmount() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    calculator.calculateTax(Double.valueOf(-100.0d));
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  @Test
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void testNormalExecution() {
+\end_layout
+
+\begin_layout Plain Layout
+
+    assertEquals(Double.valueOf(20.0),calculator.calculateTax(100.0d));
+\end_layout
+
+\begin_layout Plain Layout
+
+    assertEquals(Double.valueOf(0.0),calculator.calculateTax(0.0d));
+\end_layout
+
+\begin_layout Plain Layout
+
+    // more assertions on corner cases
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout FrameSubtitle
+Unit testing.
+ JUnit 4.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Unit test stub}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+unittestclass
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+unittestclass{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+public class TaxCalculatorImpl implements TaxCalculator {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  private final double taxRate;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  public TaxCalculatorImpl(double taxRate) { this.taxRate = taxRate; }
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+  @Override
+\end_layout
+
+\begin_layout Plain Layout
+
+  Double calculateTax(Number amount) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (amount == null) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+      throw new IllegalArgumentException("Null is not allowed as amount");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    final amountValue = amount.doubleValue();
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (amountValue() < 0) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+      throw new IllegalArgumentException("Negative amount is not allowed");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    return taxRate * amountValue;
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout FrameSubtitle
+Unit testing.
+ JUnit 4.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Tax calculator implementation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+unittestclass
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+unittestcomplete{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[basicstyle=
+\backslash
+tiny]
+\end_layout
+
+\begin_layout Plain Layout
+
+public class TaxCalculatorTest {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  private TaxCalculator calculator;
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  @Before
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void setUp() throws Exception {
+\end_layout
+
+\begin_layout Plain Layout
+
+    calculator = new TaxCalculatorImpl(20.0d);
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  // test methods
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Thinking in Object-Oriented way
+\end_layout
+
+\begin_layout FrameSubtitle
+Unit testing.
+ JUnit 4.
+\end_layout
+
+\begin_layout ExampleBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{Unit test complete}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+unittestcomplete
 \end_layout
 
 \end_inset
@@ -3470,7 +4035,7 @@ Java and WEB applications.
 \end_layout
 
 \begin_layout FrameSubtitle
-Servlets and Java Server Pages.
+Servlets.
 \end_layout
 
 \begin_layout Block
@@ -3555,7 +4120,7 @@ Java and WEB applications.
 \end_layout
 
 \begin_layout FrameSubtitle
-Servlets and Java Server Pages.
+Java Server Pages.
 \end_layout
 
 \begin_layout Block
