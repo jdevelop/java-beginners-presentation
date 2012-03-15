@@ -4030,6 +4030,157 @@ jdbcexample
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+servlexample{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=JAVA,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+tiny
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+package servlet.demo;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.io.*;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import javax.servlet.http.*;
+\end_layout
+
+\begin_layout Plain Layout
+
+import javax.servlet.*;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class HelloServlet extends HttpServlet {
+\end_layout
+
+\begin_layout Plain Layout
+
+  public void doGet (HttpServletRequest req,
+\end_layout
+
+\begin_layout Plain Layout
+
+                     HttpServletResponse res)
+\end_layout
+
+\begin_layout Plain Layout
+
+  throws ServletException, IOException {
+\end_layout
+
+\begin_layout Plain Layout
+
+    res.setContentType("text/plain");
+\end_layout
+
+\begin_layout Plain Layout
+
+    final String username = req.getParameter("username");
+\end_layout
+
+\begin_layout Plain Layout
+
+    PrintWriter out = res.getWriter();
+\end_layout
+
+\begin_layout Plain Layout
+
+    out.println("Hello, world!");
+\end_layout
+
+\begin_layout Plain Layout
+
+    if (username != null && !"".equals(username.trim()) {
+\end_layout
+
+\begin_layout Plain Layout
+
+      out.print("Username: "+username);
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    out.flush();
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout BeginFrame
 Java and WEB applications.
 \end_layout
@@ -4053,65 +4204,143 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+servlexample
 \end_layout
 
 \end_inset
 
-javax.servlet.http.HttpServlet
-\end_layout
 
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
-javax.servlet.http.HttpServletRequest and javax.servlet.http.HttpServletResponse
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<3->
-\end_layout
-
-\end_inset
-
-Sessions.
- Customer identification.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<4->
-\end_layout
-
-\end_inset
-
-web.xml definition.
 \end_layout
 
 \end_deeper
 \begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+defverbatim[colored]
+\backslash
+jspexample{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lstlisting}[
+\end_layout
+
+\begin_layout Plain Layout
+
+	language=HTML,
+\end_layout
+
+\begin_layout Plain Layout
+
+	basicstyle=
+\backslash
+tiny
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+<HTML>
+\end_layout
+
+\begin_layout Plain Layout
+
+<HEAD><TITLE>Hello</TITLE></HEAD>
+\end_layout
+
+\begin_layout Plain Layout
+
+<BODY>
+\end_layout
+
+\begin_layout Plain Layout
+
+<H1>
+\end_layout
+
+\begin_layout Plain Layout
+
+Hello, World
+\end_layout
+
+\begin_layout Plain Layout
+
+<%
+\end_layout
+
+\begin_layout Plain Layout
+
+  if (request.getParameter("username") != null 
+\end_layout
+
+\begin_layout Plain Layout
+
+        && !"".equals(request.getParameter("username").trim())) {
+\end_layout
+
+\begin_layout Plain Layout
+
+    out.println("Username: " + request.getParameter("name"));
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+%>
+\end_layout
+
+\begin_layout Plain Layout
+
+</H1>
+\end_layout
+
+\begin_layout Plain Layout
+
+</BODY></HTML>
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lstlisting}}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -4138,61 +4367,20 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-<1->
+
+\backslash
+jspexample
 \end_layout
 
 \end_inset
 
-JSP Model 1 and JSP Model 2.
- Scriplets, JSTL and Expression Langiage.
-\end_layout
 
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<2->
-\end_layout
-
-\end_inset
-
-Model/View/Controller.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<3->
-\end_layout
-
-\end_inset
-
-Entry point.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-<4->
-\end_layout
-
-\end_inset
-
-Request forwarding and including.
 \end_layout
 
 \end_deeper
@@ -4345,88 +4533,149 @@ Suggested readings
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Steve McConnell.
 
-\series default
+\series bold
  Code Complete: A Practical Handbook of Software Construction.
  
-\series bold
+\series default
 ISBN-10: 0735619670.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Joshua Bloch.
  
-\series default
+\series bold
 Effective Java.
  
-\series bold
+\series default
 ISBN-10: 0321356683.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Bruce Eckel.
  
-\series default
+\series bold
 Thinking in Java.
  
-\series bold
+\series default
 ISBN-10: 0131872486.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Kathy Sierra.
 
-\series default
+\series bold
  Head First Java.
  
-\series bold
+\series default
 ISBN-10: 0596009208.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Elisabeth Freeman.
 
-\series default
+\series bold
  Head First Design Patterns.
  
-\series bold
+\series default
 ISBN-10: 0596007124.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Martin Fowler.
 
-\series default
+\series bold
  Refactoring: Improving the Design of Existing Code.
  
-\series bold
+\series default
 ISBN-10: 0201485672.
 \end_layout
 
 \begin_layout Itemize
-
-\series bold
 Craig Larman.
 
-\series default
+\series bold
  Applying UML and Patterns: An Introduction to Object-Oriented Analysis
  and Design and Iterative Development.
  
-\series bold
+\series default
 ISBN-10: 0131489062.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Suggested readings
+\end_layout
+
+\begin_layout Itemize
+Brian Goetz.
+ 
+\series bold
+Java Concurrency in Practice.
+
+\series default
+ ISBN-10: 0321349601.
+\end_layout
+
+\begin_layout Itemize
+Jason Hunter.
+ 
+\series bold
+Java Servlet Programming (Java Series).
+
+\series default
+ ISBN-10: 0596000405.
+\end_layout
+
+\begin_layout Itemize
+Maydene Fisher.
+ 
+\series bold
+JDBC™ API Tutorial and Reference (3rd Edition).
+
+\series default
+ ISBN-10: 0321173848.
+\end_layout
+
+\begin_layout Itemize
+Venkat Subramaniam.
+ 
+\series bold
+Programming Concurrency on the JVM: Mastering Synchronization, STM, and
+ Actors.
+
+\series default
+ ISBN-10: 193435676X.
+\end_layout
+
+\begin_layout Itemize
+Martin Odersky.
+ 
+\series bold
+Programming in Scala: A Comprehensive Step-by-Step Guide, 2nd Edition.
+
+\series default
+ ISBN-10: 0981531644.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Hot stuff.
+\end_layout
+
+\begin_layout Standard
+Hibernate, Spring Framework, Lift Framework, Play! Framework, Google Web
+ Toolkit (GWT), Java Message Service (JMS), Java Management Extensions (JMX),
+ NoSQL Databases (MongoDB,CouchDB), Google AppEngine, Groovy, GRails, Clojure,
+ Scala, Akka, Software Transactional Memory, Aspect-Oriented Programming
+ (AOP)
 \end_layout
 
 \begin_layout EndFrame
